@@ -11,8 +11,7 @@ theme = "src/theme"
 default-theme = "bdfd"
 preferred-dark-theme = "bdfd"
 git-repository-url = "https://github.com/NilPointer-Software/bdfd-wiki"
-input-404 = "./404.md"
-site-url = "/bdfd-wiki/"
+input-404 = "404.md"
 edit-url-template = "https://github.com/NilPointer-Software/bdfd-wiki/edit/dev/{path}"
 
 [output.html.search]
