@@ -1,0 +1,45 @@
+.terminal {
+    --bg: #0c0c0c;
+    --fg: #149414;
+
+    --sidebar-bg: #090808;
+    --sidebar-fg: #9ccc9c;
+    --sidebar-non-existant: #2b5329;
+    --sidebar-active: #649568;
+    --sidebar-spacer: #23242a;
+
+    --scrollbar: #2b5329;
+
+    --icons: #fff;
+    --icons-hover: #2b5329;
+
+    --links: #9ccc9c;
+
+    --inline-code-color: #c5c8c6;
+
+    --theme-popup-bg: #0c0c0c;
+    --theme-popup-border: #0e6b0e;
+    --theme-hover: #2b5329;
+
+    --quote-bg: #0c0c0c;
+    --quote-border: #0e6b0e;
+
+    --table-border-color: #2b5329;
+    --table-header-bg: #2b5329;
+    --table-alternate-bg: #0e1c0d;
+
+    --searchbar-border-color: #9ccc9c;
+    --searchbar-bg: #000;
+    --searchbar-fg: #9ccc9c;
+    --searchbar-shadow-color: #9ccc9c;
+    --searchresults-header-fg: #9ccc9c;
+    --searchresults-border-color: #649568;
+    --searchresults-li-bg: #2b5329;
+    --search-mark-bg: #2b5329;
+
+    --chapter-hover-bg: var(--theme-hover);
+}
+
+.terminal a:not(.header) {
+    text-shadow: 0 0 10px#00ff05;
+}

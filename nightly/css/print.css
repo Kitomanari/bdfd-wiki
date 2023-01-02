@@ -27,6 +27,7 @@ code {
     border-radius: 5px;
 
     /* Force background to be printed in Chrome */
+    print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
 }
 
