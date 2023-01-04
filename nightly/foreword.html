@@ -165,33 +165,462 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="foreword"><a class="header" href="#foreword">Foreword</a></h1>
-<h3 id="-imagine-an-app"><a class="header" href="#-imagine-an-app">✨ Imagine An App...</a></h3>
-<p>...That makes building Discord bots easy with beginner-friendly functions. An app that's capable of developing nearly all types of bots - from simple <em>echo</em> bots, to advanced multi-purpose administration ones. Where simplicity meets functionality and scalability. That's <strong>Bot Designer for Discord</strong>.</p>
-<p>What are you waiting for? Create the bot of your dreams today!</p>
-<p><strong>Start with <a href="https://botdesignerdiscord.com"><em>Bot Designer for Discord</em></a></strong></p>
-<h3 id="-links"><a class="header" href="#-links">📎 Links</a></h3>
-<ul>
-<li><a href="https://botdesignerdiscord.com/discord">Discord Server</a></li>
-<li><a href="https://botdesignerdiscord.com/">Website</a></li>
-<li><a href="https://play.google.com/store/apps/details?id=com.jakubtomana.discordbotdesinger">Android App</a></li>
-<li><a href="https://apps.apple.com/app/bot-designer-for-discord/id1495536477">iOS App</a></li>
-<li><a href="https://botdesignerdiscord.com/app/">Web App</a> <em>(Alpha Version)</em></li>
-</ul>
-<hr />
-<h2 id="-wiki"><a class="header" href="#-wiki">📓 Wiki</a></h2>
-<p>Welcome to our humble abode. You're currrently viewing <strong>Bot Designer for Discord</strong>'s wiki.</p>
-<h3 id="-wiki-index"><a class="header" href="#-wiki-index">📂 Wiki Index</a></h3>
-<ul>
-<li><a href="./guides/introduction.html">Guides</a></li>
-<li><a href="./resources/introduction.html">Resources</a></li>
-<li><a href="./bdscript/introduction.html">BDScript</a></li>
-<li><a href="./premium/introduction.html">Premium</a></li>
-<li><a href="./javascript/introduction.html">JavaScript</a></li>
-<li><a href="./callbacks/introduction.html">Callbacks</a></li>
-</ul>
-<h4 id="want-to-contribute-to-the-wiki"><a class="header" href="#want-to-contribute-to-the-wiki">Want to contribute to the wiki?</a></h4>
-<p>Head over to the <a href="https://github.com/NilPointer-Software/bdfd-wiki/blob/dev/CONTRIBUTING.md">GitHub repository contribution file</a> and learn how you can help out!</p>
+                        <h1 id="hl-test"><a class="header" href="#hl-test">HL Test</a></h1>
+<details><summary>JS:</summary>
+<pre><code class="language-js">const uwu = 'uwu';
+console.log(uwu);
+</code></pre>
+</details
+<details><summary>JSX:</summary>
+<pre><code class="language-jsx">const uwu = 'uwu';
+console.log(uwu);
+</code></pre>
+</details
+<details><summary>BDS:</summary>
+<pre><code class="language-bds">Interaction / Slash command:
+    + General
+        - $removeComponent
+    + Button
+        - $removeButtons
+        - $editButton
+        - $addButton
+    + Menu
+        - $newSelectMenu
+        - $editSelectMenu
+        - $editSelectMenuOption
+        - $addSelectMenuOption
+    + Modal
+        - $newModal
+        - $input
+        - $addTextInput
+    + Slash command
+        - $registerGuildCommands
+        - $unregisterGuildCommands
+        - $autoCompleteOptionName
+        - $autoCompleteOptionValue
+        - $appendOptionSuggestion
+        - $slashID
+        ~ Multi category
+            - $slashCommandsCount
+            - $isSlash
+    + General
+        - $customID
+        - $defer
+        - $ephemeral
+
+Message:
+    + General
+        - $publishMessage
+        - $repliedMessageID
+        - $customImage
+        - $clear
+        - $message
+        - $nomention
+        - $messageID
+        - $noMentionMessage
+        - $pinMessage
+        - $repeatMessage
+        - $getMessage
+        - $editMessage
+        - $editIn
+        - $deleteMessage
+        - $unpinMessage
+        - $sendMessage
+        - $sendEmbedMessage
+        - $channelSendMessage
+        - $replaceText
+        - $reply
+        - $replyIn
+        - $removeContains
+        - $authorOfMessage
+        - $allowUserMentions
+        - $allowRoleMentions
+        - $allowMention
+        - $deleteIn
+        - $deletecommand
+        - $tts
+        - $url
+        - $unescape
+        - $trimSpace
+        - $toUppercase
+        - $toTitleCase
+        - $toLowercase
+        - $cropText
+        - $removeLinks
+        - $customImage
+        ~ Multi category
+            - $argCount
+            - $charCount
+            - $checkContains
+            - $onlyIfMessageContains
+            - $ignoreLinks
+            - $randomText
+            - $randomString
+    + Text Splitting
+        - $textSplit
+        - $splitText
+        - $removeSplitTextElement
+        - $joinSplitText
+        - $getTextSplitLength
+        - $getTextSplitIndex
+        - $editSplitText
+    + Reactions
+        - $userReacted
+        - $getReactions
+        - $clearReactions
+        - $awaitReactions
+        - $addReactions
+        - $addCmdReactions
+        - $usedEmoji
+        - $customEmoji
+    + Threads
+        - $editThread
+        - $startThread
+        - $threadAddMember
+        - $threadRemoveMember
+    + Embed
+        - $editEmbedIn
+        - $embeddedURL
+        - $getEmbedData
+        - $author
+        - $authorIcon
+        - $authorURL
+        - $title
+        - $description
+        - $addField
+        - $footer
+        - $footerIcon
+        - $addTimestamp
+        - $thumbnail
+        - $image
+        - $color
+
+Limiters:
+    + General
+        - $and
+        - $or
+        - $stop
+        - $enabled
+    + &quot;If&quot; statements
+        - $if
+        - $else
+        - $elseif
+        - $endif
+    + &quot;Only if&quot; statements
+        - $onlyIf
+        - $onlyAdmin
+        - $onlyBotChannelPerms
+        - $onlyBotPerms
+        - $onlyForCategories
+        - $onlyForChannels
+        - $onlyForServers
+        - $onlyForIDs
+        - $onlyForRoleIDs
+        - $onlyForRoles
+        - $onlyForUsers
+        - $onlyNSFW
+        - $onlyPerms
+        - $onlyIfMessageContains
+    + &quot;Is&quot; statements
+        - $isAdmin
+        - $isBanned
+        - $isSlash
+        - $isBoolean
+        - $isBot
+        - $isHoisted
+        - $isMentionable
+        - $isNSFW
+        - $isUserDMEnabled
+        - $isValidHex
+        - $isTimedOut
+    + &quot;Check&quot; statements
+        - $checkContains
+        - $checkUserPerms
+        - $checkCondition
+        - $argsCheck
+    + &quot;Black list&quot; statements
+        - $blackListUsers
+        - $blackListServers
+        - $blackListRoles
+        - $blackListRolesIDs
+        - $blackListIDs
+    + &quot;Ignore&quot; statements
+        - $ignoreChannels
+        - $ignoreLinks
+        - $ignoreTriggerCase
+    + &quot;Exists&quot; statements
+        - $guildExists
+        - $userExists
+        - $varExistError
+        - $roleExists
+        - $channelExists
+        - $serverChannelExists
+    + Cooldown
+        - $changeCooldownTime
+        - $cooldown
+        - $getCooldown
+        - $globalCooldown
+        - $serverCooldown
+
+Math:
+    + General
+        - $sum
+        - $sub
+        - $multi
+        - $divide
+        - $calculate
+        - $modulo
+        - $max
+        - $min
+        - $numberSeparator
+        - $round
+        - $sort
+        - $enableDecimals
+        ~ Multi category
+            - $random
+    + Count
+        - $slashCommandsCount
+        - $allMembersCount
+        - $argCount
+        - $channelCount
+        - $charCount
+        - $commandsCount
+        - $emoteCount
+        - $membersCount
+        - $roleCount
+        - $serverCount
+        - $variablesCount
+        - $categoryCount
+
+Discord:
+    + General
+        - $creationDate
+    + Guild
+        - $guildID
+        - $getServerInvite
+        - $serverDescription
+        - $serverIcon
+        - $serverInfo
+        - $serverName
+        - $serverNames
+        - $serverOwner
+        - $serverRegion
+        - $serverVerificationLvl
+        - $getInviteInfo
+        - $addEmoji
+        - $boostCount
+        - $serverEmojis
+        ~ Multi category
+            - $serverCount
+            - $emoteCount
+    + Roles
+        - $colorRole
+        - $createRole
+        - $deleteRole
+        - $findRole
+        - $getRoleColor
+        - $giveRole
+        - $hasRole
+        - $highestRole
+        - $highestRoleWithPerms
+        - $lowestRole
+        - $lowestRoleWithPerms
+        - $mentionedRoles
+        - $modifyRolePerms
+        - $modifyRole
+        - $roleGrant
+        - $roleID
+        - $roleInfo
+        - $roleName
+        - $roleNames
+        - $rolePosition
+        - $takeRole
+        - $userRoles
+        ~ Multi category
+            - $roleExists
+            - $roleCount
+    + Channels
+        - $channelID
+        - $channelIDFromName
+        - $channelName
+        - $channelTopic
+        - $channelType
+        - $createChannel
+        - $deleteChannelsByName
+        - $deleteChannels
+        - $editChannelPerms
+        - $findChannel
+        - $mentionedChannels
+        - $modifyChannelPerms
+        - $modifyChannel
+        - $useChannel
+        - $slowmode
+        - $closeTicket
+        - $newTicket
+        - $categoryID
+        - $channelPosition
+        - $parentID
+        ~ Multi category
+            - $serverChannelExists
+            - $ignoreChannels
+            - $channelExists
+            - $randomChannelID
+            - $channelCount
+    + User
+        - $changeUsernameWithID
+        - $changeUsername
+        - $findUser
+        - $getUserStatus
+        - $userAvatar
+        - $userID
+        - $userInfo
+        - $userJoinedDiscord
+        - $userJoined
+        - $userPerms
+        - $username
+        - $authorID
+        - $ban
+        - $banID
+        - $discriminator
+        - $dm
+        - $dmChannelID
+        - $kick
+        - $kickMention
+        - $mentioned
+        - $nickname
+        - $timeout
+        - $unbanID
+        - $unmute
+        - $untimeout
+        - $mute
+        - $authorAvatar
+        - $hypesquad
+        - $getCustomStatus
+
+Random:
+    + General
+        - $randomChannelID
+        - $randomUser
+        - $randomUserID
+        - $randomText
+        - $randomString
+        - $randomMention
+        - $random
+
+Error handling:
+    + General
+        - $suppressErrors
+        - $embedSuppressErrors
+        - $try
+        - $endtry
+        - $catch
+        - $error
+
+Webhooks:
+    + General
+        - $webhookAvatarURL
+        - $webhookColor
+        - $webhookContent
+        - $webhookCreate
+        - $webhookDelete
+        - $webhookDescription
+        - $webhookFooter
+        - $webhookSend
+        - $webhookTitle
+        - $webhookUsername
+
+HTTP Requests:
+    + General
+        - $httpAddHeader
+        - $httpDelete
+        - $httpGet
+        - $httpPatch
+        - $httpPost
+        - $httpPut
+        - $httpRemoveHeader
+        - $httpResult
+        - $httpStatus
+        - $httpGetHeader
+
+Variables:
+    + General
+        - $getServerVar
+        - $getUserVar
+        - $getVar
+        - $resetServerVar
+        - $resetUserVar
+        - $setServerVar
+        - $setUserVar
+        - $setVar
+        - $var
+        - $varExists
+        - $userLeaderboard
+        - $serverLeaderboard
+        - $globalUserLeaderboard
+        - $getLeaderboardValue
+        ~ Multi category
+            - $varExistError
+            - $categoryCount
+            - $variablesCount
+
+Bot:
+    + General
+        - $getBotInvite
+        - $botLeave
+        - $botListDescription
+        - $botListHide
+        - $botNode
+        - $botTyping
+        - $botID
+        - $botCommands
+        - $alternativeParsing
+        - $disableSpecialEscaping
+        - $eval
+        - $executionTime
+        - $hostingExpireTime
+        - $optOff
+        - $ping
+        - $premiumExpireTime
+        - $shardID
+        - $uptime
+        - $async
+        - $endasync
+        - $await
+        - $awaitFunc
+        - $sendNotification
+        - $scriptLanguage
+        - $botOwnerID
+
+Time:
+    + General
+        - $time
+        - $getTimestamp
+        - $minute
+        - $second
+        - $hour
+        - $year
+        - $date
+        - $day
+        - $month
+
+Something:
+    + Brackets
+        - []
+    + Semicolon
+        - ;;;
+    + Parentheses
+        - {}{}{}
+        - ()()()
+    + Escapes
+        - \\ == \
+        - %{-SEMICOL-}% , \;== ;
+        - %{DOL}% = $
+        - %ESCAPED% , \] == ]
+        - \[ = [
+    + Comment
+        - $c[NightNutSky]
+</code></pre>
+</details
 
                     </main>
 
