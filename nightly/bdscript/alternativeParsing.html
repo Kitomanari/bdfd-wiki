@@ -195,12 +195,62 @@ $description[&quot;helloworld&quot;]
 <li>
 <p>Execute commands.</p>
 <h3 id="with-alternativeparsing"><a class="header" href="#with-alternativeparsing">With <code>$alternativeParsing</code></a></h3>
-<p><img src="https://user-images.githubusercontent.com/113303649/209946250-ddf50d47-b8a7-48c2-8404-a2a58981c36d.png" alt="example" /></p>
-<h3 id="without-alternativeparsing"><a class="header" href="#without-alternativeparsing">Without <code>$alternativeParsing</code></a></h3>
-<p><img src="https://user-images.githubusercontent.com/113303649/209946555-3b270854-0176-4492-bd1a-2ba81bf389c1.png" alt="example" /></p>
+<discord-messages>
+    <discord-message role-color="#EE7908" author="Nicky">
+        hello
+    </discord-message>
+    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
+<pre><code>    &lt;discord-embed slot=&quot;embeds&quot;&gt;
+        &lt;discord-embed-description slot=&quot;description&quot;&gt;
+            &quot;hello&quot;
+        &lt;/discord-embed-description&gt;
+    &lt;/discord-embed&gt;
+&lt;/discord-message&gt;
+&lt;discord-message author=&quot;Nicky&quot; role-color=&quot;#EE7908&quot;&gt;
+    helloworld
+&lt;/discord-message&gt;
+&lt;discord-message verified author=&quot;Wiki Bot&quot; role-color=&quot;#748BD4&quot; bot&gt;
+     
+    &lt;discord-embed slot=&quot;embeds&quot;&gt;
+        &lt;discord-embed-description slot=&quot;description&quot;&gt;
+            &quot;helloworld&quot;
+        &lt;/discord-embed-description&gt;
+    &lt;/discord-embed&gt;
+&lt;/discord-message&gt;
+</code></pre>
+</discord-messages>
 </li>
 </ol>
-
+<h3 id="without-alternativeparsing"><a class="header" href="#without-alternativeparsing">Without <code>$alternativeParsing</code></a></h3>
+<discord-messages>
+       <discord-message role-color="#EE7908" author="Nicky">
+           hello
+       </discord-message>
+       <discord-message bot author="Wiki Bot" role-color="#748BD4" verified>
+<pre><code>       &lt;discord-embed slot=&quot;embeds&quot;&gt;
+           &lt;discord-embed-description slot=&quot;description&quot;&gt;
+               &quot;hello&quot;
+           &lt;/discord-embed-description&gt;
+       &lt;/discord-embed&gt;
+   &lt;/discord-message&gt;
+   &lt;discord-message author=&quot;Nicky&quot; role-color=&quot;#EE7908&quot;&gt;
+       helloworld
+   &lt;/discord-message&gt;
+   &lt;discord-message author=&quot;Wiki Bot&quot; verified role-color=&quot;#748BD4&quot; bot&gt;
+        
+       &lt;discord-embed slot=&quot;embeds&quot;&gt;
+           &lt;discord-embed-description slot=&quot;description&quot;&gt;
+               &quot;helloworld&quot;
+           &lt;/discord-embed-description&gt;
+       &lt;/discord-embed&gt;
+       &lt;discord-embed slot=&quot;embeds&quot;&gt;
+           &lt;discord-embed-description slot=&quot;description&quot;&gt;
+               &quot;hello&quot;
+           &lt;/discord-embed-description&gt;
+       &lt;/discord-embed&gt;
+   &lt;/discord-message&gt;
+</code></pre>
+</discord-messages>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
