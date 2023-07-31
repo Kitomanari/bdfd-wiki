@@ -196,7 +196,7 @@ $addField[The field name 3!;The field value 3!]
     <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
+    <discord-message author="Wiki Bot" role-color="#748BD4" verified bot>
 <pre><code>    &lt;discord-embed slot=&quot;embeds&quot;&gt;
         &lt;discord-embed-fields slot=&quot;fields&quot;&gt;
             &lt;discord-embed-field field-title=&quot;The field name 1!&quot;&gt;
@@ -220,19 +220,19 @@ $addField[The field name 2!;The field value 2!;yes]
 $addField[The field name 3!;The field value 3!;yes]
 </code></pre>
 <discord-messages>
-    <discord-message role-color="#EE7908" author="Nicky">
+    <discord-message author="Nicky" role-color="#EE7908">
         !example
     </discord-message>
-    <discord-message bot verified author="Wiki Bot" role-color="#748BD4">
+    <discord-message author="Wiki Bot" verified bot role-color="#748BD4">
 <pre><code>    &lt;discord-embed slot=&quot;embeds&quot;&gt;
         &lt;discord-embed-fields slot=&quot;fields&quot;&gt;
-            &lt;discord-embed-field field-title=&quot;The field name 1!&quot; inline inline-index=&quot;1&quot;&gt;
+            &lt;discord-embed-field inline inline-index=&quot;1&quot; field-title=&quot;The field name 1!&quot;&gt;
                 The field value 1!
             &lt;/discord-embed-field&gt;
-            &lt;discord-embed-field inline field-title=&quot;The field name 2!&quot; inline-index=&quot;2&quot;&gt;
+            &lt;discord-embed-field field-title=&quot;The field name 2!&quot; inline inline-index=&quot;2&quot;&gt;
                 The field value 2!
             &lt;/discord-embed-field&gt;
-            &lt;discord-embed-field inline inline-index=&quot;3&quot; field-title=&quot;The field name 3!&quot;&gt;
+            &lt;discord-embed-field field-title=&quot;The field name 3!&quot; inline inline-index=&quot;3&quot;&gt;
                 The field value 3!
             &lt;/discord-embed-field&gt;
         &lt;/discord-embed-fields&gt;
