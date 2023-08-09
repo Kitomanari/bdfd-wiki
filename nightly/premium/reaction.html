@@ -180,9 +180,23 @@
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <h3 id="trigger-reactionclick"><a class="header" href="#trigger-reactionclick">Trigger <code>$reaction[click]</code></a></h3>
 <pre><code>$nomention
-$sendMessage[$username clicked on reaction]
+$sendMessage[$username clicked on the reaction]
 </code></pre>
-<p><img src="https://user-images.githubusercontent.com/113303649/210166708-3395a683-07ad-4f1b-b018-31f2a317de6f.png" alt="example" /></p>
+<discord-messages>
+    <discord-message author="Nicky" role-color="#EE7908">
+        !example
+    </discord-message>
+    <discord-message verified bot author="Wiki Bot" role-color="#748BD4">
+        Click
+        <discord-reactions slot="reactions">
+            <discord-reaction emoji="https://cdn.discordapp.com/emojis/766607515445231637.webp" count="2" reacted name=":emoji:">
+            </discord-reaction>
+        </discord-reactions>
+    </discord-message>
+    <discord-message bot verified role-color="#748BD4" author="Wiki Bot">
+        Nicky clicked on the reaction
+    </discord-message>
+</discord-messages>
 <blockquote>
 <p>For more info, see the <a href="../premium/awaitedReactions.html">Awaited Reactions Guide</a>.</p>
 </blockquote>

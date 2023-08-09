@@ -181,17 +181,18 @@
 $onlyPerms[manageroles;❌ You need the `MANAGE_ROLES` permission to use that!]
 $argsCheck[&gt;2;Please provide the needed arguments! The `colorHex` and `role` arguments are needed.]
 $colorRole[$noMentionMessage]
-✅ Changed the role color!
+✅ Changed the role color of &lt;@&amp;$mentionedRoles[1]&gt; to `$noMentionMessage`!
 </code></pre>
 <discord-messages>
-    <discord-message timestamp="Today at 4:20 PM" role-color="#EE7908" author="Nicky">
-        !example #E11F0E
+    <discord-message role-color="#EE7908" author="Nicky">
+        !example <discord-mention type="role" color="#E11F0E">cool role</discord-mention> #E11F0E
     </discord-message>
-    <discord-message bot role-color="#748BD4" verified author="Wiki Bot" timestamp="Today at 4:20 PM">
-        ✅ Changed the role color!
+    <discord-message verified author="Wiki Bot" role-color="#748BD4" bot>
+        ✅ Changed the role color of <discord-mention type="role" color="#E11F0E">cool role</discord-mention> to <code>#E11F0E</code>!
     </discord-message>
 </discord-messages>
-![example](https://user-images.githubusercontent.com/111157596/257056832-3040aa89-91ea-428e-b362-3ed075cf620e.png)
+<p><img src="https://user-images.githubusercontent.com/111157596/257056832-3040aa89-91ea-428e-b362-3ed075cf620e.png" alt="example" /></p>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

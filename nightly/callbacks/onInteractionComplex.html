@@ -184,8 +184,8 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <ol>
-<li>Create two commands and set the trigger <code>$onInteraction[example]</code> for one command and <code>!example</code> for the other.</li>
-</ol>
+<li>
+<p>Create two commands and set the trigger <code>$onInteraction[example]</code> for one command and <code>!example</code> for the other.</p>
 <ul>
 <li>Code with trigger <code>!example</code>:</li>
 </ul>
@@ -199,9 +199,28 @@ $addButton[no;example;Click!;primary]
 <pre><code>$nomention
 $sendMessage[Hello $username!]
 </code></pre>
-<ol start="2">
-<li>Execute commands<br />
-<img src="https://user-images.githubusercontent.com/113303649/223438800-7323f05e-77b5-464e-9385-4f287ba3bcba.png" alt="example" /></li>
+</li>
+<li>
+<p>Execute commands</p>
+<discord-messages>
+    <discord-message author="Nicky" role-color="#EE7908">
+        !example
+    </discord-message>
+    <discord-message author="Wiki Bot" verified role-color="#748BD4" bot>
+        Click!
+        <discord-attachments slot="components">
+            <discord-action-row>
+                <discord-button type="primary">
+                    Click Me!
+                </discord-button>
+            </discord-action-row>
+        </discord-attachments>
+    </discord-message>
+    <discord-message bot role-color="#748BD4" verified author="Wiki Bot">
+        Hello Nicky!
+    </discord-message>
+</discord-messages>
+</li>
 </ol>
 <blockquote>
 <p>How <a href="../bdscript/addButton.html"><code>$addButton[]</code></a> works?</p>
