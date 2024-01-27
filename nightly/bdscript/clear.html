@@ -170,13 +170,13 @@
                         <h1 id="clear"><a class="header" href="#clear">$clear</a></h1>
 <p>Deletes a certain amount of messages.</p>
 <blockquote>
-<p>🧙‍♂️ When using just <code>$clear</code>, the author's message must include a number.</p>
+<p>When using just <code>$clear</code>, the author's message must include a number.</p>
 </blockquote>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <pre><code>$clear
 </code></pre>
 <blockquote>
-<p>📌 Discord doesn't allow deleting messages in bulk which are over 2 weeks old.</p>
+<p>Discord doesn't allow deleting messages in bulk which are over 2 weeks old.</p>
 </blockquote>
 <h3 id="permissions"><a class="header" href="#permissions">Permissions</a></h3>
 <p>Required permissions that the bot must have for this function to work properly:</p>
@@ -185,10 +185,42 @@
 </ul>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
-$onlyPerms[managemessages;You need the 'MANAGE_MESSAGES' permission to use that!]
-$argsCheck[&gt;1;Please provide how many messages to clear. Usage: !purge (number)]
+$deletecommand
 $clear
 </code></pre>
+<h3 id="before"><a class="header" href="#before">Before</a></h3>
+<discord-messages>
+    <discord-message author="RainbowKey" avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d" role-color="#E67E22">
+        5
+    </discord-message>
+    <discord-message author="Nicky" avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/34462b51-de96-4a43-b085-3babc085f70b" role-color="#509070">
+        4
+    </discord-message>
+    <discord-message author="MineBartekSA" avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/1ecd3b3a-4bdf-441a-98ad-361254426a74" role-color="#f1bdee">
+        3
+    </discord-message>
+    <discord-message avatar="https://github.com/Rainb0wKey/bdfd-wiki/assets/113303649/5d649ade-b7d9-471f-84d0-8cc36b4fa76e" role-color="#4365ab" author="Kito">
+        2
+    </discord-message>
+    <discord-message avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/06e0dcd9-3668-4d51-ad7b-3e7d68e5021a" author="Emperor Toaster" role-color="#939394">
+        1
+    </discord-message>
+    <discord-message avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d" author="RainbowKey" role-color="#E67E22">
+        !example 3
+    </discord-message>
+</discord-messages>
+<h3 id="after"><a class="header" href="#after">After</a></h3>
+<discord-messages>
+    <discord-message avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d" role-color="#E67E22" author="RainbowKey">
+        5
+    </discord-message>
+    <discord-message avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/34462b51-de96-4a43-b085-3babc085f70b" author="Nicky" role-color="#509070">
+        4
+    </discord-message>
+    <discord-message avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/1ecd3b3a-4bdf-441a-98ad-361254426a74" author="MineBartekSA" role-color="#f1bdee">
+        3
+    </discord-message>
+</discord-messages>
 
                     </main>
 

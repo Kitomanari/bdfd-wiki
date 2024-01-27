@@ -175,13 +175,27 @@
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code>$nomention
 $if[$message==BDFD]
-  $sendMessage[I love BDFD!]
+  I love BDFD!
 $endif
 </code></pre>
 <h3 id="with-endif"><a class="header" href="#with-endif">With <code>$endif</code></a></h3>
-<p><img src="https://github.com/Rainb0wKey/bdfd-wiki/assets/113303649/40bc25ff-7bd1-43f4-8c70-0fd52ad8dc02" alt="example" /></p>
+<discord-messages>
+    <discord-message role-color="#E67E22" avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d" author="RainbowKey">
+        !example BDFD
+    </discord-message>
+    <discord-message author="BDFD Support" verified avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61" bot role-color="#378afa">
+        I love BDFD!
+    </discord-message>
+</discord-messages>
 <h3 id="without-endif"><a class="header" href="#without-endif">Without <code>$endif</code></a></h3>
-<p><img src="https://github.com/Rainb0wKey/bdfd-wiki/assets/113303649/468b635e-7879-4adc-a2c6-5b8ca641092d" alt="example" /></p>
+<discord-messages>
+    <discord-message avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/a9034fd5-40c2-4320-a408-2f2ee0071d9d" role-color="#E67E22" author="RainbowKey">
+        !example BDFD
+    </discord-message>
+    <discord-message verified avatar="https://github.com/NilPointer-Software/bdfd-wiki/assets/113303649/e5fdc906-6c14-4e19-91c0-4ce95b852c61" bot role-color="#378afa" author="BDFD Support">
+        <code>$if</code> not closed with <code>$endif</code>
+    </discord-message>
+</discord-messages>
 <blockquote>
 <p>For more info, see the <a href="../guides/ifStatements.html">If Guide</a>.</p>
 </blockquote>
