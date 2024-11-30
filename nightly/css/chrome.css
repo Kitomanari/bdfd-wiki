@@ -26,6 +26,7 @@ a > .hljs {
     top: 0;
     z-index: 101;
     margin: auto calc(0px - var(--page-padding));
+    padding: 10px;
 }
 #menu-bar > #menu-bar-sticky-container {
     display: flex;
@@ -34,6 +35,7 @@ a > .hljs {
     border-bottom-color: var(--bg);
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    border-radius: 10px;
 }
 .js #menu-bar > #menu-bar-sticky-container {
     transition: transform 0.3s;
@@ -47,7 +49,7 @@ a > .hljs {
     z-index: 10;
     line-height: var(--menu-bar-height);
     cursor: pointer;
-    transition: color 0.5s;
+    transition: color 0.2s;
 }
 @media only screen and (max-width: 420px) {
     #menu-bar i, #menu-bar .icon-button {
@@ -155,8 +157,8 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     font-size: 2.5em;
     text-align: center;
     text-decoration: none;
-    width: 90px;
-    border-radius: 5px;
+    width: 60px;
+    border-radius: 10px;
     background-color: var(--chapter-hover-bg);
 }
 
@@ -184,7 +186,8 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 :not(pre) > .hljs {
     display: inline;
     padding: 0.1em 0.3em;
-    border-radius: 3px;
+    border-radius: 4px;
+    box-shadow: none;
 }
 
 :not(pre):not(a) > .hljs {
@@ -211,9 +214,9 @@ pre:hover > .buttons {
 pre > .buttons {
     position: absolute;
     z-index: 100;
-    right: 5px;
+    right: -2px;
     margin: 2px;
-    padding: 3px;
+    padding: 2px;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.1s linear, opacity 0.1s linear;
@@ -224,24 +227,43 @@ pre > .buttons {
 
 pre > .buttons :hover {
     color: var(--sidebar-active);
-    border-color: var(--icons-hover);
-    background-color: var(--theme-hover);
+    border-color: var(--sidebar-active);
+    border-radius: 8px;
+    
+    width: 32px;
+    height: 32px;
+    
+    opacity: .85;
+    
+    transition: 100ms;
+    transition-property: width,height,border-radius;
+}
+
+pre > .buttons :active {
+    color: #60f36b;
+    border-color: #60f36b;
 }
 
 pre > .buttons i {
     margin-left: 8px;
 }
 pre > .buttons button {
-    color: var(--icons);
+    color: #aeaeae;
     margin: 0px 5px;
     padding: 3px 5px;
     cursor: inherit;
 
+    width: 30px;
+    height: 30px;
+    
     border-style: solid;
     border-width: 1px;
-    border-radius: 4px;
-    border-color: var(--icons);
+    border-radius: 9px;
+    border-color: #aeaeae;
+    
     background-color: var(--theme-popup-bg);
+    opacity: .75;
+    
     transition: 100ms;
     transition-property: color,border-color,background-color;
 }
@@ -276,14 +298,17 @@ mark.fade-out {
 }
 
 #searchbar {
-    width: 100%;
-    margin: 5px auto 0px auto;
-    padding: 10px 16px;
+    margin: 5px auto 0px;
+    margin-left: 3%;
+    width: 95%;
+    height: 30px;
+    padding: 2%;
     transition: box-shadow 300ms ease-in-out;
     border: 1px solid var(--searchbar-border-color);
-    border-radius: 3px;
+    border-radius: 10px;
     background-color: var(--searchbar-bg);
     color: var(--searchbar-fg);
+    font-style: italic;
 }
 #searchbar:focus,
 #searchbar.active {
@@ -293,7 +318,8 @@ mark.fade-out {
 .searchresults-header {
     font-weight: bold;
     font-size: 1em;
-    padding: 18px 0 0 300px;
+    text-align: center;
+    padding: 18px 0 0 18px;
     color: var(--searchresults-header-fg);
 }
 
@@ -306,16 +332,27 @@ mark.fade-out {
 
 ul#searchresults {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 0px;
 }
+
 ul#searchresults li {
     margin: 10px 0px;
     padding: 2px;
-    border-radius: 2px;
+    background-color: var(--theme-hover);
+    border-radius: 8px;
+    padding: 7px;
 }
 ul#searchresults li.focus {
-    background-color: var(--searchresults-li-bg);
+    border-radius: 10px;
+    padding: 9px;
+    background: var(--sidebar-bg);
+    font-size: 16.5px;
+    border-width: 1px;
+    border-color: var(--icons);
+    border-style: solid;
+
 }
+
 ul#searchresults span.teaser {
     display: block;
     clear: both;
@@ -331,26 +368,22 @@ ul#searchresults span.teaser em {
 
 .sidebar {
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 5px;
+    top: 10px;
     bottom: 0;
     width: var(--sidebar-width);
     font-size: 0.875em;
     box-sizing: border-box;
+    border-radius: 10px;
+    width: var(--sidebar-width);
+    height: 97%;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: contain;
     background-color: var(--sidebar-bg);
     color: var(--sidebar-fg);
+    scrollbar-color: var(--scrollbar) rgba(255, 0, 0, 0);
 }
-.sidebar-resizing {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.js:not(.sidebar-resizing) .sidebar {
-    transition: transform 0.3s; /* Animation: slide away */
-}
+
 .sidebar code {
     line-height: 2em;
 }
@@ -363,26 +396,15 @@ ul#searchresults span.teaser em {
     right: 0;
     padding: 10px 10px;
 }
-.sidebar .sidebar-resize-handle {
-    position: absolute;
-    cursor: col-resize;
-    width: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-.js .sidebar .sidebar-resize-handle {
-    cursor: col-resize;
-    width: 5px;
-}
+
 .sidebar-hidden .sidebar {
-    transform: translateX(calc(0px - var(--sidebar-width)));
+    transform: translateX(calc(-5px - var(--sidebar-width)));
+    transition: transform 0.3s;
 }
-.sidebar::-webkit-scrollbar {
-    background: var(--sidebar-bg);
-}
-.sidebar::-webkit-scrollbar-thumb {
-    background: var(--scrollbar);
+
+.sidebar-visible .sidebar {
+    transform: translateX(0);
+    transition: transform 0.3s;
 }
 
 .sidebar-visible .page-wrapper {
@@ -473,9 +495,9 @@ ul#searchresults span.teaser em {
 .theme-popup {
     position: absolute;
     left: 10px;
-    top: var(--menu-bar-height);
+    top: 60px;
     z-index: 1000;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 0.7em;
     color: var(--fg);
     background: var(--theme-popup-bg);
@@ -503,9 +525,6 @@ ul#searchresults span.teaser em {
 }
 .theme-popup .theme:hover {
     background-color: var(--theme-hover);
-}
-.theme-popup .theme:hover:first-child,
-.theme-popup .theme:hover:last-child {
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
+    border-radius: 10px;
+    transition: .5s;
 }
